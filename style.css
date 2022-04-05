@@ -2,9 +2,13 @@
 .navbar {
   background-color: var(--light-color);
   height: 8rem;
+  position: relative;
 }
 .navbar .container {
   max-width: 140rem;
+}
+.logo {
+  z-index: 100;
 }
 
 .navbar .navbar-content {
@@ -29,9 +33,40 @@
   color: var(--secondary-tint-color);
 }
 
+.navbar .mobile-menu {
+  border: 0;
+  background: none;
+  font-size: 3.2rem;
+  transition: var(--transition-set);
+  cursor: pointer;
+  font-weight: bold;
+  display: none;
+}
+.navbar .close {
+  display: none;
+}
+.navbar .mobile-menu .menu:hover {
+  color: var(--secondary-color);
+  transform: scale(0.9);
+}
+/* MAKING NAVIGATION MENU STICK TO THE TOP WITH JAVASCRIPT */
+.sticky .navbar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+  width: 100%;
+  background-color: rgb(255, 255, 255, 0.92);
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  transition: all 0.5s ease;
+}
+.sticky .hero-section {
+  margin-top: 9.6rem;
+}
+
 /** SECTION: HERO  */
 .hero-section {
-  height: 50rem;
+  height: 49.9rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(./img/home-img/hero.png);
   background-size: cover;

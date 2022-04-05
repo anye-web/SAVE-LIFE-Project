@@ -218,3 +218,106 @@ img {
 .mt-4 {
   margin-top: 9.8rem;
 }
+
+/** MEDIA QUERRIES  */
+
+/** LARGE DEVICES (LANDSCAPE TABLETS, AND UP 992px ) */
+@media (max-width: 62em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/** MEDIUM DEVICES (  TABLETS , AND UP 768px ) */
+@media (max-width: 48em) {
+  .subs-content.grid,
+  .patron-content.grid,
+  .support-content.grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-content.grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-content.grid .footer-subs {
+    grid-column: 1 / -1;
+  }
+  .patron-content--txt {
+    margin: 10rem 0;
+  }
+  .patron-content--txt {
+    margin: 10rem 0;
+    width: 100%;
+  }
+  .patron-content--img {
+    width: 100%;
+    justify-self: center;
+  }
+
+  .subs-content.grid {
+    gap: 0;
+  }
+  /* MOBILE NAVIGATION */
+  .nav-links {
+    background-color: rgb(255, 255, 255);
+    transition: all 0.6s ease;
+    position: absolute;
+    z-index: 99;
+    width: 70%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-open .nav-links {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-open .open {
+    display: none;
+  }
+  .nav-open .close {
+    display: block;
+  }
+  .navbar .nav-links .links {
+    flex-direction: column;
+    font-size: 2.4rem;
+  }
+  .navbar .mobile-menu {
+    display: block;
+    z-index: 999;
+  }
+}
+
+/** SMALL DEVICES ( MOBILE ,   600px ) */
+@media (max-width: 37.5em) {
+  .how-content.grid {
+    grid-template-columns: 1fr;
+  }
+  .stats-content.grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/** SMALL DEVICES ( MOBILE ,   469px ) */
+@media (max-width: 29.5em) {
+  .footer-content.grid {
+    grid-template-columns: 1fr;
+  }
+  .patron-content--txt img,
+  .supporters .supporters-img {
+    display: none;
+  }
+  .patron-section {
+    background-color: var(--secondary-color);
+  }
+  .patron-content--txt {
+    margin: 0;
+    justify-self: start;
+  }
+}
