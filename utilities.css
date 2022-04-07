@@ -336,7 +336,7 @@ img {
   .support-content.grid {
     grid-template-columns: 1fr;
   }
-  .about-hero .xl-heading {
+  .xl-heading {
     font-size: 5.2rem;
   }
   .footer-content.grid {
