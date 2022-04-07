@@ -256,6 +256,15 @@
 /********************/
 /** PAGE: CONTACT*/
 /********************/
+.contact-hero {
+  height: 49.9rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./img/contact-img/contact-h.jpg);
+  background-size: cover;
+  background-position: center;
+  color: var(--light-color);
+  position: relative;
+}
 #message {
   padding: 1.6rem 2.4rem;
   width: 100%;
