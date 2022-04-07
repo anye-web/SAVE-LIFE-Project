@@ -456,5 +456,8 @@ img {
     justify-self: start;
   }
 
-  /* DONATE PAGE  */
+  /* ABOUT PAGE  */
+  .about-hero.py-5 {
+    padding-top: 4.8rem;
+  }
 }
