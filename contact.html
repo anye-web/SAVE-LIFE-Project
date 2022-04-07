@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Save a Life Today</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utilities.css" />
+  </head>
+  <body>
+    <!--* SECTION: NAVIGATION  -->
+    <header class="navbar">
+      <div class="container">
+        <div class="navbar-content">
+          <div class="logo">
+            <img src="img/logo.png" alt="" />
+          </div>
+          <nav class="nav-links">
+            <ul class="links">
+              <li><a href="index.html" class="link">Home</a></li>
+              <li><a href="about.html" class="link">About</a></li>
+              <li><a href="#" class="link active">Contact</a></li>
+              <li>
+                <a href="donate.html" class="btn btn-primary link"
+                  >Donate Now</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <button class="mobile-menu">
+            <ion-icon class="menu-icon open" name="menu-outline"></ion-icon>
+            <ion-icon class="menu-icon close" name="close-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!--* SECTION: HERO  -->
+    <section class="donate-hero py-5 sticky-header">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="xl-heading">
+            Join Our Team To Make <br />
+            The World A Better Place
+          </h1>
+
+          <a href="donate.html" class="my-2 btn btn-primary">Donate now</a>
+        </div>
+      </div>
+    </section>
+
+    <!--* SECTION: DONATE PAYMENT-->
+    <section class="payment my-5">
+      <div class="container">
+        <div class="payment-content p-3 bg-primary">
+          <form class="form-pay py-2">
+            <div class="my-3 txt-center">
+              <h3 class="sm-heading">Get In Touch</h3>
+              <p>
+                Please use the form below to request for further information
+              </p>
+            </div>
+            <div class="control-form grid grid-col-2">
+              <input
+                type="text"
+                name="first-name"
+                class="pay-input"
+                placeholder="First Name"
+              />
+              <input
+                type="email"
+                name="email"
+                class="pay-input"
+                placeholder="Email Address"
+              />
+            </div>
+            <div class="control-form">
+              <textarea
+                name="message"
+                id="message"
+                placeholder="message"
+              ></textarea>
+            </div>
+          </form>
+
+          <div class="txt-center">
+            <button class="btn btn-primary btn-wide">send</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--* SECTION: FOOTER -->
+    <footer class="footer-section bg-dark py-4">
+      <div class="container">
+        <h2 class="md-heading my-2">
+          We are committed that all money <br />
+          raised goes directly to the cause
+        </h2>
+        <div class="footer-content grid grid-col-3">
+          <div class="footer-contact">
+            <h3 class="tr-heading">Connect with us</h3>
+            <div class="footer-contact--icons">
+              <a href="#"
+                ><ion-icon class="footer-icons" name="logo-twitter"></ion-icon
+              ></a>
+              <a href="#"
+                ><ion-icon class="footer-icons" name="logo-whatsapp"></ion-icon
+              ></a>
+              <a href="#"
+                ><ion-icon class="footer-icons" name="logo-instagram"></ion-icon
+              ></a>
+            </div>
+          </div>
+          <div class="footer-learn">
+            <h3 class="tr-heading">learn more</h3>
+            <a href="about.html">About us</a>
+          </div>
+          <div class="footer-subs">
+            <h3 class="tr-heading">Subscribe to our news letter</h3>
+            <form class="form-control">
+              <input
+                type="email"
+                class="form-input"
+                placeholder="Email Address"
+              />
+              <button class="btn btn-primary">Subscribe now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--* SECTION: SCRIPTS -->
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
