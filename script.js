@@ -11,7 +11,7 @@ btnNavEl.addEventListener("click", function () {
 
 // MAKING NAVIGATION MENU STICKY
 
-const heroSectionEl = document.querySelector(".hero-section");
+const heroEl = document.querySelector(".sticky-header");
 
 const obs = new IntersectionObserver(
   function (entries) {
@@ -29,4 +29,4 @@ const obs = new IntersectionObserver(
     rootMargin: "-100px",
   }
 );
-obs.observe(heroSectionEl);
+obs.observe(heroEl);
